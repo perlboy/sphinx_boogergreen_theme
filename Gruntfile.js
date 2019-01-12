@@ -7,11 +7,11 @@ module.exports = function(grunt) {
     // Read package.json
     pkg: grunt.file.readJSON("package.json"),
 
-    open : {
-      dev: {
-        path: 'http://localhost:1919'
-      }
-    },
+//    open : {
+//      dev: {
+//        path: 'http://localhost:1919'
+//      }
+//    },
 
     connect: {
       server: {
@@ -181,9 +181,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');
-  grunt.loadNpmTasks('grunt-open');
+  //grunt.loadNpmTasks('grunt-open');
   grunt.loadNpmTasks('grunt-browserify');
 
-  grunt.registerTask('default', ['exec:bower_update','clean','copy:fonts','sass:dev','browserify:dev','usebanner','exec:build_sphinx','connect','open','watch']);
+  grunt.registerTask('default', ['exec:bower_update','clean','copy:fonts','sass:dev','browserify:dev','usebanner','exec:build_sphinx','connect','watch']);
   grunt.registerTask('build', ['exec:bower_update','clean','copy:fonts','sass:build','browserify:build','uglify','usebanner','exec:build_sphinx']);
 }
