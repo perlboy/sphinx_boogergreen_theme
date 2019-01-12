@@ -29,21 +29,21 @@ module.exports = function(grunt) {
               expand: true,
               flatten: true,
               src: ['bower_components/font-awesome/fonts/*'],
-              dest: 'sphinx_rtd_theme/static/fonts/',
+              dest: 'sphinx_boogergreen_theme/static/fonts/',
               filter: 'isFile'
           },
           {
               expand: true,
               flatten: true,
               src: ['fonts/Lato/*'],
-              dest: 'sphinx_rtd_theme/static/fonts/Lato',
+              dest: 'sphinx_boogergreen_theme/static/fonts/Lato',
               filter: 'isFile'
           },
           {
               expand: true,
               flatten: true,
               src: ['fonts/RobotoSlab/*'],
-              dest: 'sphinx_rtd_theme/static/fonts/RobotoSlab/',
+              dest: 'sphinx_boogergreen_theme/static/fonts/RobotoSlab/',
               filter: 'isFile'
           }
         ]
@@ -60,7 +60,7 @@ module.exports = function(grunt) {
           expand: true,
           cwd: 'sass',
           src: ['*.sass'],
-          dest: 'sphinx_rtd_theme/static/css',
+          dest: 'sphinx_boogergreen_theme/static/css',
           ext: '.css'
         }]
       },
@@ -74,7 +74,7 @@ module.exports = function(grunt) {
           expand: true,
           cwd: 'sass',
           src: ['*.sass'],
-          dest: 'sphinx_rtd_theme/static/css',
+          dest: 'sphinx_boogergreen_theme/static/css',
           ext: '.css'
         }]
       }
@@ -89,7 +89,7 @@ module.exports = function(grunt) {
           }
         },
         src: ['js/*.js'],
-        dest: 'sphinx_rtd_theme/static/js/theme.js'
+        dest: 'sphinx_boogergreen_theme/static/js/theme.js'
       },
       build: {
         options: {
@@ -99,7 +99,7 @@ module.exports = function(grunt) {
           }
         },
         src: ['js/*.js'],
-        dest: 'sphinx_rtd_theme/static/js/theme.js'
+        dest: 'sphinx_boogergreen_theme/static/js/theme.js'
       }
     },
     uglify: {
@@ -113,8 +113,8 @@ module.exports = function(grunt) {
         },
         files: [{
           expand: true,
-          src: ['sphinx_rtd_theme/static/js/*.js', '!sphinx_rtd_theme/static/js/*.min.js'],
-          dest: 'sphinx_rtd_theme/static/js/',
+          src: ['sphinx_boogergreen_theme/static/js/*.js', '!sphinx_boogergreen_theme/static/js/*.min.js'],
+          dest: 'sphinx_boogergreen_theme/static/js/',
           rename: function (dst, src) {
             // Use unminified file name for minified file
             return src;
@@ -131,7 +131,7 @@ module.exports = function(grunt) {
           linebreak: true
         },
         files: {
-          src: [ 'sphinx_rtd_theme/static/js/theme.js', 'sphinx_rtd_theme/static/css/theme.css' ]
+          src: [ 'sphinx_boogergreen_theme/static/js/theme.js', 'sphinx_boogergreen_theme/static/css/theme.css' ]
         }
       }
     },
@@ -145,9 +145,9 @@ module.exports = function(grunt) {
     },
     clean: {
       build: ["docs/build"],
-      fonts: ["sphinx_rtd_theme/static/fonts"],
-      css: ["sphinx_rtd_theme/static/css"],
-      js: ["sphinx_rtd_theme/static/js/*", "!sphinx_rtd_theme/static/js/modernizr.min.js"]
+      fonts: ["sphinx_boogergreen_theme/static/fonts"],
+      css: ["sphinx_boogergreen_theme/static/css"],
+      js: ["sphinx_boogergreen_theme/static/js/*", "!sphinx_boogergreen_theme/static/js/modernizr.min.js"]
     },
 
     watch: {
@@ -158,7 +158,7 @@ module.exports = function(grunt) {
       },
       /* Changes in theme dir rebuild sphinx */
       sphinx: {
-        files: ['sphinx_rtd_theme/**/*', 'README.rst', 'docs/**/*.rst', 'docs/**/*.py'],
+        files: ['sphinx_boogergreen_theme/**/*', 'README.rst', 'docs/**/*.rst', 'docs/**/*.py'],
         tasks: ['clean:build','exec:build_sphinx']
       },
       /* JavaScript */

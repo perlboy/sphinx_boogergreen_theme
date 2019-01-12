@@ -11,7 +11,7 @@ Project-wide Configuration
 HTML Theme Options
 ------------------
 
-The theme's project-wide options are defined in the ``sphinx_rtd_theme/theme.conf``
+The theme's project-wide options are defined in the ``sphinx_boogergreen_theme/theme.conf``
 file of this repository, and can be defined in your project's ``conf.py`` via
 ``html_theme_options``. For example:
 
