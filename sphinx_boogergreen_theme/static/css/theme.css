@@ -1,5 +1,3 @@
-/* sphinx_boogergreen_theme version 0.4.2 | MIT license */
-/* Built 20190112 12:01 */
 @charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
@@ -5603,6 +5601,9 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
 .rst-content .wy-table-responsive.citation, .rst-content .wy-table-responsive.footnote {
   margin-bottom: 0;
 }
+.rst-content .wy-table-responsive.table, .rst-content .wy-table-responsive.td, .rst-content .wy-table-responsive.th {
+  white-space: normal;
+}
 .rst-content .wy-table-responsive.citation + :not(.citation),
 .rst-content .wy-table-responsive.footnote + :not(.footnote) {
   margin-top: 24px;
@@ -5632,7 +5633,6 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
 .rst-content table.field-list .field-name {
   padding-right: 10px;
   text-align: left;
-  white-space: nowrap;
 }
 .rst-content table.field-list .field-body {
   text-align: left;
