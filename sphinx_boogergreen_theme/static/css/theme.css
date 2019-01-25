@@ -1,3 +1,5 @@
+/* sphinx_boogergreen_theme version 0.4.2 | MIT license */
+/* Built 20190125 12:01 */
 @charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
@@ -5107,7 +5109,7 @@ html {
 .wy-nav-content {
   padding: 1.618em 3.236em;
   height: 100%;
-  max-width: 800px;
+  max-width: 1440px;
   margin: auto;
 }
 
@@ -5233,7 +5235,7 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
     overflow: hidden;
   }
 }
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1740px) {
   .wy-nav-content-wrap {
     background: rgba(0, 0, 0, 0.05);
   }
@@ -5241,6 +5243,11 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
   .wy-nav-content {
     margin: 0;
     background: #fcfcfc;
+  }
+
+  .wy-table-responsive.table.td {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 }
 @media print {
