@@ -246,6 +246,9 @@
   // Remove the large vertical space between citations and footnotes
   .wy-table-responsive.citation, .wy-table-responsive.footnote
     margin-bottom: 0
+  // No wrapping on wy-table elements
+  .wy-table-responsive.table, .wy-table-responsive.td, .wy-table-responsive.th
+    white-space: normal
   // Re-add vertical space to element directly following citation and footnotes,
   // if the following element is of a different type
   .wy-table-responsive.citation + :not(.citation),
@@ -278,7 +281,6 @@
     .field-name
       padding-right: 10px
       text-align: left
-      white-space: nowrap
     .field-body
       text-align: left
 
